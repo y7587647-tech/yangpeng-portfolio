@@ -1,0 +1,129 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>杨鹏｜内容运营作品集</title><style>
+    :root {
+      --bg: #fbfaf7;
+      --fg: #1a1a1a;
+      --muted: #6b6b6b;
+      --rule: #e6e3dc;
+      --accent: #b04a2f;
+      --serif: "Fraunces", Georgia, serif;
+      --sans: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      background: var(--bg);
+      color: var(--fg);
+      font-family: var(--sans);
+      font-size: 16px;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+    .wrap { max-width: 760px; margin: 0 auto; padding: 80px 32px; }
+    header { padding-bottom: 48px; border-bottom: 1px solid var(--rule); margin-bottom: 56px; }
+    h1 {
+      font-family: var(--serif);
+      font-weight: 600;
+      font-size: clamp(36px, 6vw, 56px);
+      line-height: 1.05;
+      letter-spacing: -0.02em;
+      margin-bottom: 16px;
+    }
+    .role { font-size: 18px; color: var(--muted); margin-bottom: 24px; }
+    .role .accent { color: var(--accent); }
+    .value-prop {
+      font-family: var(--serif);
+      font-size: 22px;
+      line-height: 1.4;
+      max-width: 600px;
+      margin-bottom: 32px;
+    }
+    .ctas { display: flex; gap: 12px; flex-wrap: wrap; }
+    .cta {
+      display: inline-block;
+      padding: 10px 18px;
+      border-radius: 999px;
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 14px;
+      transition: transform 0.15s ease;
+    }
+    .cta-primary { background: var(--fg); color: var(--bg); }
+    .cta-secondary { border: 1px solid var(--rule); color: var(--fg); }
+    .cta:hover { transform: translateY(-1px); }
+    section { margin-bottom: 64px; }
+    h2 {
+      font-family: var(--serif);
+      font-size: 14px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: var(--muted);
+      margin-bottom: 24px;
+    }
+    .about p { font-size: 18px; line-height: 1.7; max-width: 620px; }
+    .about p + p { margin-top: 16px; }
+    .timeline-item {
+      display: grid;
+      grid-template-columns: 140px 1fr;
+      gap: 24px;
+      padding: 24px 0;
+      border-bottom: 1px solid var(--rule);
+    }
+    .timeline-item:last-child { border-bottom: none; }
+    .timeline-dates { font-size: 13px; color: var(--muted); padding-top: 4px; }
+    .timeline-title { font-family: var(--serif); font-size: 20px; font-weight: 600; margin-bottom: 4px; }
+    .timeline-company { color: var(--muted); margin-bottom: 12px; font-size: 14px; }
+    .timeline-bullets { list-style: none; padding: 0; }
+    .timeline-bullets li {
+      padding-left: 18px;
+      position: relative;
+      margin-bottom: 6px;
+      font-size: 15px;
+    }
+    .timeline-bullets li::before {
+      content: "—";
+      position: absolute;
+      left: 0;
+      color: var(--accent);
+    }
+    .tech-row { font-size: 13px; color: var(--muted); margin-top: 12px; }
+    .skills-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; }
+    .skill-cat-title { font-size: 13px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.08em; color: var(--muted); margin-bottom: 8px; }
+    .skill-list { font-family: var(--serif); font-size: 17px; line-height: 1.6; }
+    .projects-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
+    .project-card {
+      padding: 24px;
+      background: white;
+      border: 1px solid var(--rule);
+      border-radius: 4px;
+      transition: border-color 0.2s ease;
+    }
+    .project-card:hover { border-color: var(--accent); }
+    .project-name { font-family: var(--serif); font-size: 19px; font-weight: 600; margin-bottom: 8px; }
+    .project-desc { font-size: 14px; color: var(--muted); margin-bottom: 16px; min-height: 44px; }
+    .project-tech { font-size: 12px; color: var(--muted); margin-bottom: 12px; }
+    .project-links { display: flex; gap: 12px; }
+    .project-links a { font-size: 13px; color: var(--accent); text-decoration: none; }
+    .project-links a:hover { text-decoration: underline; }
+    .writing-list { list-style: none; padding: 0; }
+    .writing-list li { padding: 14px 0; border-bottom: 1px solid var(--rule); display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
+    .writing-list a { color: var(--fg); text-decoration: none; font-family: var(--serif); font-size: 17px; }
+    .writing-list a:hover { color: var(--accent); }
+    .writing-venue { font-size: 13px; color: var(--muted); }
+    footer {
+      margin-top: 48px;
+      padding-top: 32px;
+      border-top: 1px solid var(--rule);
+      font-size: 14px;
+      color: var(--muted);
+    }
+    footer a { color: var(--fg); text-decoration: none; }
+    footer a:hover { color: var(--accent); }
+    @media (max-width: 600px) {
+      .wrap { padding: 48px 20px; }
+      .timeline-item { grid-template-columns: 1fr; gap: 8px; }
+      .skills-grid { grid-template-columns: 1fr; }
+    }
+  
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#faf9f6;color:#242422;font-family:Arial,"Microsoft YaHei",sans-serif;line-height:1.8}main{max-width:960px;margin:auto;padding:70px 48px}h1{font-family:Georgia,"Songti SC",serif;font-size:64px;line-height:1.2;letter-spacing:-2px;margin:20px 0}h2{font-size:15px;letter-spacing:.12em;margin:0 0 24px;color:#666}h3{font-size:27px;line-height:1.4;margin:16px 0}h4{font-size:13px;color:#777;margin:0 0 8px}p{margin:0 0 18px}.eyebrow{font-size:11px;letter-spacing:.18em;color:#877654}.role{font-size:17px;color:#777}.value-prop{font-family:Georgia,"Songti SC",serif;font-size:28px;max-width:650px}.intro{max-width:650px;color:#666;font-size:14px}.hero{padding-bottom:54px}.hero nav{display:flex;gap:14px;margin-top:30px}.hero nav a,.video-link{display:inline-block;padding:11px 23px;border:1px solid #252520;border-radius:30px;color:#252520;text-decoration:none;background:transparent;font-size:13px;cursor:pointer}.hero nav a:first-child{background:#252520;color:white}section,footer{border-top:1px solid #dedbd4;padding:38px 0}.metrics{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-bottom:14px}.metrics strong{display:block;font:40px Georgia,serif}.metrics span{font-size:12px;color:#777}.caption{font-size:11px;color:#8a8981;margin-top:12px}.section-intro{font-size:13px;color:#777}.case{padding:36px 0 42px;border-bottom:1px solid #dedbd4}.case:last-child{border-bottom:0;padding-bottom:0}.case-top{display:flex;justify-content:space-between}.label{font-size:11px;color:#777}.case>p{font-size:14px;color:#555;max-width:740px}.media{min-height:240px;background:#eeece6;border:1px dashed #c9c4b9;display:flex;align-items:center;justify-content:center;margin:25px 0 24px;position:relative}.upload{border:0;background:none;color:#817b70;padding:35px;cursor:pointer;font-size:16px;line-height:1.7}.upload span{display:block;font-size:11px;color:#9a9488;margin-top:10px}.media img,.evidence img{width:100%;max-height:480px;object-fit:contain;display:block}.case-details{display:grid;grid-template-columns:1fr 1fr;gap:32px;margin:24px 0}.case-details p{font-size:13px;color:#555}.evidence{margin-top:24px;background:#f2f0eb;border:1px dashed #d7d2c8;text-align:center;position:relative}.evidence .upload{font-size:13px;padding:20px}.replace{position:absolute;right:10px;top:10px;padding:5px 10px;background:#fff;border:1px solid #ddd;cursor:pointer}.tool-row{font-size:13px;color:#555}footer p{font-size:13px} [contenteditable]:focus{outline:1px dashed #baaa86;background:#fffdf6}.editor-bar{position:sticky;top:0;z-index:9;background:#262622;color:white;display:flex;gap:10px;align-items:center;padding:12px 20px;font-size:12px}.editor-bar small{margin-right:auto;color:#bab9af}.editor-bar button{background:#f2f0e7;color:#333;border:0;padding:8px 12px;border-radius:4px;cursor:pointer}#toast{position:fixed;bottom:25px;left:50%;transform:translateX(-50%);padding:10px 20px;background:#333;color:#fff;display:none;font-size:13px;border-radius:6px} @media(max-width:700px){main{padding:40px 23px}h1{font-size:48px}.metrics strong{font-size:32px}.case-details{grid-template-columns:1fr;gap:10px}.editor-bar{flex-wrap:wrap}.editor-bar small{display:none}.media{min-height:190px}h3{font-size:23px}}@media print{.editor-bar,#toast,.replace{display:none!important}main{padding:12mm;max-width:none}body{background:white}.case{break-inside:auto}h2,h3{break-after:avoid}.media,.evidence,.case-details{break-inside:avoid}a{color:inherit} @page{size:A4;margin:8mm}}</style><style>.platform-gallery{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px;margin:25px 0 16px}.platform-card{margin:0;border:1px solid #dedbd4;background:#fff;border-radius:9px;overflow:hidden}.platform-card figcaption{display:flex;align-items:center;justify-content:space-between;padding:13px 18px;border-bottom:1px solid #eeeae2;font-size:13px}.platform-card figcaption span{color:#877654;font-size:12px}.profile-crop{position:relative;aspect-ratio:1.65;overflow:hidden;background:white}.profile-crop img{position:absolute;left:0;width:100%;height:auto;max-height:none;display:block}@media(max-width:560px){.platform-gallery{grid-template-columns:1fr}}@media print{.platform-gallery{break-inside:avoid}}</style><style>.platform-gallery{max-width:620px;margin-left:auto;margin-right:auto;gap:18px}.platform-card figcaption{padding:10px 12px}.platform-card figcaption span{font-size:11px}.profile-crop img{image-rendering:auto}.profile-crop{cursor:zoom-in}.profile-crop:after{content:'点击查看原图';position:absolute;right:6px;bottom:6px;padding:2px 6px;background:#ffffffdf;color:#777;font-size:10px;border-radius:3px;pointer-events:none}@media(max-width:560px){.platform-gallery{max-width:300px}}dialog.image-viewer{border:0;border-radius:8px;padding:16px;max-width:95vw;max-height:94vh;background:#fff}dialog.image-viewer::backdrop{background:#000a}dialog.image-viewer img{display:block;max-width:85vw;max-height:80vh;width:auto;height:auto;margin:auto}dialog.image-viewer button{display:block;margin:0 0 12px auto;padding:5px 12px;cursor:pointer}@media print{.profile-crop:after{display:none}}</style><style>.xhs-showcase{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:32px;align-items:center;margin:28px 0}.xhs-image{height:440px;overflow:hidden;border-radius:10px;background:#555449;position:relative}.xhs-image img{display:block;width:100%;height:auto;max-height:none;margin-top:-21%}.xhs-description h4{font-size:27px;color:#333;margin:15px 0}.xhs-description p{font-size:14px}.xhs-description p.caption{font-size:11px}.xhs-description b{font-family:Georgia,serif;font-size:24px}@media(max-width:600px){.xhs-showcase{grid-template-columns:1fr}.xhs-image{height:400px}}@media print{.xhs-showcase{break-inside:avoid}}</style><style>.platform-card figcaption strong{font-size:22px;font-weight:800;line-height:1.4;color:#242422}.platform-card figcaption{padding:12px 14px}</style><style>.platform-overview{margin:26px 0 16px}.platform-overview img{display:block;width:100%;height:auto;max-height:none;border-radius:10px}.platform-overview a{display:block;cursor:zoom-in}@media print{.platform-overview{break-inside:avoid}}</style><style>.taobao-evidence{margin:26px 0 12px}.taobao-frame{overflow:hidden;position:relative;border-radius:8px;background:#faf9f6}.taobao-frame img{display:block;width:100%;height:auto;max-height:none}.taobao-evidence figcaption{font-size:12px;color:#777;margin-top:10px;line-height:1.7}@media print{.taobao-evidence{break-inside:avoid}}</style><style>.first-collab{margin:26px auto 12px;max-width:580px}.first-collab-crop{overflow:hidden;border:1px solid #dedbd4;border-radius:8px}.first-collab-crop img{display:block;width:100%;height:auto;max-height:none}.first-collab figcaption{font-size:12px;color:#777;line-height:1.7;margin-top:12px}@media print{.first-collab{break-inside:avoid}}</style><style>.xhs-works{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px;margin-top:28px;align-items:start}.xhs-work-card{margin:0;border:1px solid #dfdbd3;border-radius:9px;overflow:hidden;background:#fff}.xhs-work-crop{overflow:hidden}.xhs-work-crop img{display:block;width:100%;height:auto;max-height:none}.xhs-work-card figcaption{padding:15px 16px;border-top:1px solid #eee}.xhs-work-card figcaption strong{display:block;font-size:14px}.xhs-work-card figcaption span{display:block;font-size:12px;color:#887552;margin-top:7px}@media(max-width:580px){.xhs-works{grid-template-columns:1fr}}@media print{.xhs-work-card{break-inside:avoid}}</style></head><body><div class="editor-bar"><span>作品集模板 · 极简浅色</span><small>文字可直接修改，图片可点击或拖入</small><button onclick="saveLocal()">保存到浏览器</button><button onclick="downloadPage()">下载更新后的网页</button><button onclick="window.print()">打印 / 存为 PDF</button></div><main id="portfolio"><header class="hero"><div class="eyebrow">PORTFOLIO / 作品集</div><h1 contenteditable="true">杨鹏</h1><p class="role" contenteditable="true">新媒体运营 · 内容策划 · 视频剪辑</p><p class="value-prop" contenteditable="true">用内容连接用户，让创意带来价值。</p><p class="intro" contenteditable="true">独立内容创作与账号运营，参与小红书内容优化及创作者合作。这里展示代表作品、个人职责与项目成果。</p><nav><a href="#selected">查看案例 ↓</a><a href="#contact">联系我</a></nav></header><section class="overview"><h2>成果概览</h2><div class="metrics"><div><strong contenteditable="true">40 万</strong><span contenteditable="true">全网累计粉丝</span></div><div><strong contenteditable="true">7000 万</strong><span contenteditable="true">全网累计播放</span></div><div><strong contenteditable="true">20+</strong><span contenteditable="true">品牌商业合作</span></div></div><p class="caption" contenteditable="true">以上为个人账号截至 2026 年 8 月的数据；具体案例数据单独说明。</p></section><section id="selected"><h2>代表案例</h2><p class="section-intro">精选内容作品，分享项目思路与运营成果。</p><article class="case"><div class="case-top"><span class="eyebrow">CASE 01</span><span class="label">独立运营</span></div><h3 contenteditable="true">个人账号「椰子树先生」</h3><p contenteditable="true">独立完成账号定位、选题、脚本、剪辑与数据复盘，持续测试并优化内容方向。</p><figure class="platform-overview"><a href="platform-overview-selected.png" target="_blank" rel="noopener" title="查看完整展示图"><img src="platform-overview-selected.png" alt="椰子树先生四平台账号展示：B站23.5万、抖音7.3万、快手7.9万、西瓜视频8.5万粉丝"></a></figure><p class="caption">四个平台账号主页截图 · 数值以各截图显示为准，与前文历史统计时间可能不同。</p><div class="case-details"><div><h4>我的职责</h4><p contenteditable="true">选题策划、内容优化、数据复盘与合作沟通。请根据该作品的实际分工调整。</p></div><div><h4>项目成果</h4><p contenteditable="true">淘宝商业合作视频，B站播放量约 200 万，为该账号播放量最高的视频。</p></div></div><a class="video-link" href="https://www.bilibili.com/video/BV1V1421976J/" target="_blank" rel="noopener">观看淘宝商业合作视频 ↗</a><figure class="taobao-evidence"><div class="taobao-frame" style="aspect-ratio:1917/888"><img src="taobao-video-frame-original.png" alt="淘宝商业合作视频片段，画面展示淘宝百亿补贴推广信息" style="margin-top:-5.00782473%"></div><figcaption contenteditable="true">淘宝商业合作视频｜视频片段截图。已裁去上下黑边，保留原始画面、推广信息及字幕。</figcaption></figure><p class="caption" contenteditable="true">淘宝商业合作视频片段，B站播放量约 200 万，为账号播放量最高的视频。</p></article><article class="case"><div class="case-top"><span class="eyebrow">CASE 02</span><span class="label">早期辅助运营</span></div><h3 contenteditable="true">小红书「石一画」</h3><p contenteditable="true">协助账号定位、文案与视频风格调整，参与数据复盘及商单对接；内容拍摄与日常内容把控由博主本人负责。</p><div class="xhs-showcase"><div class="xhs-image"><img src="embedded-5.png" alt="石一画小红书主页：1.6万粉丝，18.1万获赞与收藏"></div><div class="xhs-description"><span class="eyebrow">小红书账号</span><h4 contenteditable="true">石一画</h4><p contenteditable="true">分享日常 · 穿搭 · Vlog</p><p contenteditable="true"><b>1.6 万</b> 粉丝<br><b>18.1 万</b> 获赞与收藏</p><p class="caption" contenteditable="true">用户提供的账号截图。当前规模包含后续独立运营发展，不等同于本人早期参与期间的增长成果。</p><a class="video-link" href="https://www.xiaohongshu.com/user/profile/5de21c12000000000100b989" target="_blank" rel="noopener">查看小红书主页 ↗</a></div></div><div class="case-details"><div><h4>我的职责</h4><p contenteditable="true">选题策划、内容优化、数据复盘与合作沟通。请根据该作品的实际分工调整。</p></div><div><h4>项目成果</h4><p contenteditable="true">粉丝与点赞持续增长，获得数个稳定合作商家。可补充参与阶段的数据对比或商单案例。</p></div></div><button class="video-link" onclick="setVideo(this)">添加作品链接 ↗</button><div class="xhs-works"><figure class="xhs-work-card"><div class="xhs-work-crop" style="aspect-ratio:1284/2514"><img src="xhs-work-outfit.png" alt="石一画笔记《分享穿搭 落日大美辣！！ootd》截图" style="margin-top:-12.53894081%"></div><figcaption><strong contenteditable="true">分享穿搭 落日大美辣！！ootd</strong><span contenteditable="true">点赞 9474 · 收藏 1456 · 评论 78</span></figcaption></figure><figure class="xhs-work-card"><div class="xhs-work-crop" style="aspect-ratio:1284/2514"><img src="xhs-work-autumn.png" alt="石一画笔记《狠狠期待秋冬一把》截图" style="margin-top:-12.53894081%"></div><figcaption><strong contenteditable="true">狠狠期待秋冬一把</strong><span contenteditable="true">点赞 8837 · 收藏 2541 · 评论 121</span></figcaption></figure></div><p class="caption" contenteditable="true">以上为账号公开笔记的作品与互动数据截图；本人负责早期定位、文案与风格建议、数据复盘及商单对接，拍摄与日常内容把控由博主本人负责。</p></article><article class="case"><div class="case-top"><span class="eyebrow">CASE 03</span><span class="label">合作创作 / 辅助运营</span></div><h3 contenteditable="true">创作者「伤心烤尤莉」</h3><p contenteditable="true">负责合作视频策划、剪辑与运营，参与平台迁移、数据复盘及商单对接。</p><figure class="platform-overview"><a href="youli-platform-overview.png" target="_blank" rel="noopener"><img src="youli-platform-overview.png" alt="伤心烤尤莉四平台账号展示：B站19.6万、抖音24.6万、快手29.4万、西瓜视频24.5万粉丝"></a><figcaption class="caption">账号后续发展展示，数据以所提供主页截图为准；本人参与运营期间为 2023 年 2 月至年底，当时全网粉丝约 30 万。</figcaption></figure><div class="case-details"><div><h4>我的职责</h4><p contenteditable="true">选题策划、内容优化、数据复盘与合作沟通。请根据该作品的实际分工调整。</p></div><div><h4>项目成果</h4><p contenteditable="true">2023 年 2 月至年底参与期间，全网粉丝从几千增长至约 30 万；合作内容全网约数百万播放。</p></div></div><a class="video-link" href="https://www.bilibili.com/video/BV1Bo4y1v7zL/" target="_blank" rel="noopener">观看尤莉陪玩合作视频 ↗</a><figure class="first-collab"><div class="first-collab-crop" style="overflow:hidden"><div class="first-collab-segment" style="aspect-ratio:1284/714;overflow:hidden"><img src="youli-first-collab-original.png" style="margin-top:-11.60436137%;display:block;width:100%;height:auto;max-height:none" alt="联合创作视频截图局部"></div><div class="first-collab-segment" style="aspect-ratio:1284/914;overflow:hidden"><img src="youli-first-collab-original.png" style="margin-top:-83.87850467%;display:block;width:100%;height:auto;max-height:none" alt="联合创作视频截图局部"></div></div><figcaption contenteditable="true">首次 B站联合创作｜《现在陪玩都这么离谱了！？》<br>创作团队显示：椰子树先生（UP主）、伤心烤尤莉（参演）。<br>截图数据：播放 26.8 万、弹幕 297、点赞 1.6 万、投币 1007、收藏 1040、分享 132；发布时间：2023 年 2 月 14 日。</figcaption></figure><p class="caption" contenteditable="true">首次与尤莉联合创作的陪玩主题视频，展示双方合作及作品表现。</p></article></section><section><h2>工作方式与工具</h2><div class="tool-row"><p contenteditable="true">内容策划与脚本｜视频剪辑｜数据复盘｜达人合作</p><p contenteditable="true">熟练掌握剪映；会使用 PowerPoint、Adobe Illustrator；使用 Excel 透视表、GPT 与 Claude Code 辅助工作。</p></div></section><footer id="contact"><h2>欢迎进一步交流</h2><p contenteditable="true">杨鹏 · 上海 · 东华大学硕士在读</p><p contenteditable="true">邮箱：352611471@qq.com</p><p class="caption">可在发布前删除或更换联系方式。此文件为待补充作品素材的模板。</p></footer></main><input type="file" id="imagePicker" accept="image/*" hidden><div id="toast" role="status"></div><script>let selectedImage=null;const picker=document.getElementById('imagePicker');function toast(t){const n=document.getElementById('toast');n.textContent=t;n.style.display='block';setTimeout(()=>n.style.display='none',2500)}function chooseImage(b){selectedImage=b.closest('[data-image]');picker.click()}function applyImage(box,file){if(!file||!file.type.startsWith('image/'))return;const r=new FileReader();r.onload=()=>{box.replaceChildren();const img=document.createElement('img');img.src=r.result;img.alt='作品或数据截图';box.append(img);const b=document.createElement('button');b.className='replace';b.textContent='更换图片';b.setAttribute('onclick','chooseImage(this)');box.append(b)};r.readAsDataURL(file)}picker.onchange=()=>{applyImage(selectedImage,picker.files[0]);picker.value=''};function bind(){document.querySelectorAll('[data-image]').forEach(box=>{box.ondragover=e=>e.preventDefault();box.ondrop=e=>{e.preventDefault();applyImage(box,e.dataTransfer.files[0])};const b=box.querySelector('.replace');if(b)b.onclick=()=>chooseImage(b)})}function setVideo(b){const prev=b.dataset.url||'';const url=prompt('粘贴作品的完整网页链接（https://…）',prev);if(url===null)return;try{const u=new URL(url);if(!['http:','https:'].includes(u.protocol))throw Error();b.dataset.url=u.href;b.textContent='打开作品 ↗';b.onclick=()=>window.open(b.dataset.url,'_blank','noopener');const edit=document.createElement('button');edit.className='video-link';edit.textContent='修改链接';edit.style.marginLeft='10px';edit.setAttribute('onclick','setVideo(this.previousElementSibling);this.remove()');b.after(edit)}catch{toast('请输入有效的 http 或 https 链接')}}function saveLocal(){try{localStorage.setItem('yp-portfolio-project-results-v15',document.getElementById('portfolio').innerHTML);toast('已保存到当前浏览器')}catch{toast('图片较大，请下载网页保存')}}function downloadPage(){const copy=document.documentElement.cloneNode(true);copy.querySelector('#toast').style.display='none';const a=document.createElement('a');a.href=URL.createObjectURL(new Blob(['<!doctype html>'+copy.outerHTML],{type:'text/html;charset=utf-8'}));a.download='杨鹏-作品集.html';a.click();setTimeout(()=>URL.revokeObjectURL(a.href),1000)}try{const saved=localStorage.getItem('yp-portfolio-project-results-v15');if(saved)document.getElementById('portfolio').innerHTML=saved}catch{}document.querySelectorAll('.video-link[data-url]').forEach(b=>b.onclick=()=>window.open(b.dataset.url,'_blank','noopener'));bind();</script><dialog class="image-viewer" id="imageViewer"><button onclick="this.closest('dialog').close()">关闭</button><img alt="账号截图原图"></dialog><script>document.querySelectorAll('.profile-crop').forEach(box=>{box.onclick=()=>{const d=document.getElementById('imageViewer');d.querySelector('img').src=box.querySelector('img').src;d.showModal()}});</script></body></html>
+
